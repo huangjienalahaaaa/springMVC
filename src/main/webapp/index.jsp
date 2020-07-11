@@ -5,6 +5,8 @@
 </head>
 <body>
     <h3>入门程序</h3>
-    <a href="hello">点我</a>
+<%--    <a href="hello">点我</a>--%>
+    <a href="user/hello">点我</a>
+    <a href="user/testRequestMapping">RequestMapping注解</a>
 </body>
 </html>
