@@ -8,6 +8,8 @@ public class Account implements Serializable {
     private String password;
     private Double money;
 
+    private User user;
+
     public String getUsername() {
         return username;
     }
@@ -32,12 +34,21 @@ public class Account implements Serializable {
         this.money = money;
     }
 
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
     @Override
     public String toString() {
         return "Account{" +
                 "username='" + username + '\'' +
                 ", password='" + password + '\'' +
                 ", money=" + money +
+                ", user=" + user +
                 '}';
     }
 }
