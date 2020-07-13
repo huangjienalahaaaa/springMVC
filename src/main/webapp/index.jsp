@@ -5,6 +5,6 @@
 </head>
 <body>
 <%--请求参数绑定--%>
-    <a href="params/testParam">请求参数绑定</a>
+    <a href="params/testParam?username=hehe&password=1234">请求参数绑定</a>
 </body>
 </html>
