@@ -9,12 +9,6 @@
     <param-value/>
   </context-param>
 
-  <!--前端控制器
-  1.  <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>:
-    -> DispatcherServlet类：
-        DispatcherServlet是SpringMVC的核心控制器，就像是SpringMVC的心脏，几乎所有的请求都会经过这个控制器，通过它，大大的降低了模块之间的耦合度。
-        所有学SpringMVC的同学们第一步肯定都是先配置这个Servlet，不然还写啥SpringMVC啊。
-  -->
   <servlet>
     <servlet-name>dispatcherServlet</servlet-name>
     <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
@@ -22,7 +16,6 @@
       <param-name>contextConfigLocation</param-name>
       <param-value>classpath:springmvc.xml</param-value>
     </init-param>
-<!--    load-on-startupno表示：一启动服务器，就可以去创建DispatcherServlet对象-->
     <load-on-startup>1</load-on-startup>
   </servlet>
 
