@@ -4,8 +4,7 @@
     <title>Title</title>
 </head>
 <body>
-    <h3>入门程序</h3>
-    <a href="user/hello">点我</a>
-    <a href="user/testRequestMapping">RequestMapping注解</a>
+<%--请求参数绑定--%>
+    <a href="params/testParam">请求参数绑定</a>
 </body>
 </html>
