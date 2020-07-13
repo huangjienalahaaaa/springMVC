@@ -8,7 +8,6 @@ public class User implements Serializable {
     private String uname;
     private Integer age;
 
-//    加入Date类型
     private Date date;
 
 
