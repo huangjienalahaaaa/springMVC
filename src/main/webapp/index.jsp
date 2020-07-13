@@ -5,21 +5,11 @@
 </head>
 <body>
 
-<%--把数据封装Account类中，类中存在list和map的集合--%>
-<form action="params/saveAccount" method="post">
-    姓名：<input type="text" name="username"><br/>
-    密码：<input type="text" name="password"><br/>
-    金额：<input type="text" name="money"><br/>
 
-
-    用户的姓名：<input type="text" name="list[0].uname"><br/>
-    用户的年龄：<input type="text" name="list[0].age"><br/>
-
-
-    用户的姓名：<input type="text" name="map['one'].uname"><br/>
-    用户的年龄：<input type="text" name="map['one'].age"><br/>
-
-
+<form action="params/saveUser" method="post">
+    用户的姓名：<input type="text" name="username"><br/>
+    用户的年龄：<input type="text" name="password"><br/>
+    用户的生日：<input type="text" name="date"><br/>
     <input type="submit" value="提交">
 </form>
 

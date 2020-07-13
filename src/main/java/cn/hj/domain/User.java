@@ -2,10 +2,15 @@ package cn.hj.domain;
 
 
 import java.io.Serializable;
+import java.util.Date;
 
 public class User implements Serializable {
     private String uname;
     private Integer age;
+
+//    加入Date类型
+    private Date date;
+
 
     public String getUname() {
         return uname;
@@ -23,11 +28,20 @@ public class User implements Serializable {
         this.age = age;
     }
 
+    public Date getDate() {
+        return date;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
+    }
+
     @Override
     public String toString() {
         return "User{" +
                 "uname='" + uname + '\'' +
                 ", age=" + age +
+                ", date=" + date +
                 '}';
     }
 }
