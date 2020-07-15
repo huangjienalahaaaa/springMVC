@@ -1,6 +1,7 @@
 package cn.hj.controllor;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.CookieValue;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -11,9 +12,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 @RequestMapping("/anno")
 public class AnnoController {
 
-    @RequestMapping("testRequestParam")
-    public String testRequestParam(@RequestParam(name="username") String uname){
-        System.out.println(uname);
+//获取Cookie的值
+    @RequestMapping("/testCookieValue")
+    public String testCookieValue(@CookieValue(name="JSESSSIONID") String cookieValue){
+        System.out.println(cookieValue);
         return  "success";
     }
 }

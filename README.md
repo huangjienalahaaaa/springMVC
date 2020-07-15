@@ -1,12 +1,20 @@
-#v3.0 常用注解 - RequestParam
+#v3.4 常用注解 - CookieValue注解
 
 ***作用：***
-把请求中指定名称的参数给控制器中的形参赋值
+用于把指定cookie名称的值传入控制器方法参数
 
 ***赋值：***
 
-value:请求参数中的名称
-required:请求参数中是否必须提供此参数。默认值：true。表示必须提供，如果不提供将报错
+value:指定cookie的名称
+required:是否必须有此cookie
 
 
-> 即：jsp的url地址传来的参数是username.但是后台接受的名称叫做uname,这个时候怎么办？就要用@RequestParam注解。
+
+
+
+## 浏览器和服务器cookie和session流程：
+
+
+前端发送请求  ------------------------------------------>   服务器端生成session 
+
+              <---------------JSESSSIONID------------------------  服务器以cookie的形式将生成的session发送过去

@@ -6,7 +6,7 @@
 <body>
 
 
-<a href="anno/testRequestParam?username=hehehehe">RequestParam</a>
+<a href="anno/testCookieValue">CookieValue</a>
 
 </body>
 </html>
