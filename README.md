@@ -1,4 +1,4 @@
-#v3.5.2 常用注解 - ModelAttribute注解(修饰参数) - 有返回值
+#v3.5.3 常用注解 - ModelAttribute注解(修饰参数) - 没有返回值
 
 比如说这个项目的User类中，有三个属性：
 uname,age,date
