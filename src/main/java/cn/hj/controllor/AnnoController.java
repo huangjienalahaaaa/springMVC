@@ -14,7 +14,7 @@ public class AnnoController {
 
 //获取Cookie的值
     @RequestMapping("/testCookieValue")
-    public String testCookieValue(@CookieValue(name="JSESSSIONID") String cookieValue){
+    public String testCookieValue(@CookieValue(value="JSESSSIONID") String cookieValue){
         System.out.println(cookieValue);
         return  "success";
     }
