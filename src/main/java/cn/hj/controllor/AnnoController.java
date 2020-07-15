@@ -1,10 +1,13 @@
 package cn.hj.controllor;
 
+import cn.hj.domain.User;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.CookieValue;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+
+import java.util.Date;
 
 /**
  * 常用的注解
@@ -14,15 +17,24 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class AnnoController {
 
     @RequestMapping("/testModelAttribute")
-    public String testModelAttribute(){
-        System.out.println("testModelAttribute执行了");
-        return  "success";
+    public String testModelAttribute(User user){
+        System.out.println(user);
+        return "success";
     }
 
-    //放在方法上，会先执行下面这个方法。再执行上面的testModelAttribute()方法
+
+/* 该方法会先执行
+*  有返回值
+*/
     @ModelAttribute
-    public void showUser(){
+    public User showUser(String uname){
         System.out.println("showUser方法执行了");
-    }
 
+        //通过用户查询数据库（模拟）
+        User user = new User();
+        user.setUname(uname);
+        user.setAge(20);
+        user.setDate(new Date());
+        return user;
+    }
 }
