@@ -19,13 +19,5 @@
         <property name="suffix" value=".jsp"></property>
     </bean>
 
-    <bean id="conversionService" class="org.springframework.context.support.ConversionServiceFactoryBean">
-        <property name="converters">
-            <set>
-                <bean class="cn.hj.utils.StringToDateConverter"></bean>
-            </set>
-        </property>
-    </bean>
-
-    <mvc:annotation-driven conversion-service="conversionService"></mvc:annotation-driven>
+    <mvc:annotation-driven></mvc:annotation-driven>
 </beans>

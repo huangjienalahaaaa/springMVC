@@ -9,7 +9,6 @@
 </head>
 <body>
 
-<a href="/anno/testSessionAttribute">testSessionAttribute</a>
 
 </body>
 </html>
