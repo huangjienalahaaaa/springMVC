@@ -1,4 +1,4 @@
-#v35 常用注解 - ModelAttribute注解
+#v35 常用注解 - ModelAttribute注解(修饰方法)
 
 ***作用：***
     该注解是SpringMVV4.3版本以后新加入的，它可以用于修饰方法和参数。
