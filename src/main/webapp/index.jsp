@@ -6,7 +6,7 @@
 <body>
 
 
-<a href="params/testServlet">servlet原生的APY</a>
+<a href="anno/testRequestParam?username=hehehehe">RequestParam</a>
 
 </body>
 </html>
