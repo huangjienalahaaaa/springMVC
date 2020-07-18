@@ -15,22 +15,13 @@ import java.io.IOException;
 @Controller
 @RequestMapping("/user")
 public class UserController {
-    @RequestMapping("/testModelAndView")
-    public ModelAndView testModelAndView(){
-        //创建ModelAndView对象
-        ModelAndView mv = new ModelAndView();
+    @RequestMapping("/testForwardOrRedirect")
+    public String testForwardOrRedirect(){
 
-        //模拟从数据库中查询User对象
-        User user = new User();
-        user.setUsername("美美");
-        user.setPassword("123");
-        user.setAge(30);
+    //1. 请求转发(使用关键字的方式，这种方式不能使用视图解析器)，下面是固定格式
+    //return "forward:/WEB-INF/pages/success.jsp";
 
-    // 把user对象存储到对象中，也会把user对象存入到request对象
-        mv.addObject("user",user);
-        mv.setViewName("success");
-
-
-        return mv;
+    //2. 重定向(还是一样的问题，重定向不能访问/WEB-INF目录以及下面的所有文件，但是可以访问webapp/index.jsp文件)
+        return "redirect:/index.jsp";
     }
 }

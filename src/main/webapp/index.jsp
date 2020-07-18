@@ -4,6 +4,6 @@
     <title>Title</title>
 </head>
 <body>
-<a href="user/testModelAndView">testModelAndView</a>
+<a href="user/testForwardOrRedirect">testForwardOrRedirect</a>
 </body>
 </html>
