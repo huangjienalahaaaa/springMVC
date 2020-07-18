@@ -14,6 +14,6 @@
     </script>
 </head>
 <body>
-<button id="btn"> 发送ajax的请求</button>
+    <button id="btn"> 发送ajax的请求</button>
 </body>
 </html>
