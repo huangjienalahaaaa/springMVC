@@ -1,13 +1,15 @@
-# v4.6 响应json数据之 响应json格式数据：
+SpringMVC实现文件上传
 
-***需求：***
-
-使用@ResponseBody注解实现将controller方法返回对象转换为json响应给客户端
-
-***前置知识：***
- springMVC默认用MappingJacksonHttpMessageConverter对json数据进行转换，需要加入jackson的包：
- 
- ![](img/2.jpg)
+# v5.0 文件上传原理分析和搭建环境
 
 
-1. 在pom.xml文件中引入jar包
+***文件上传的必要前提：***
+![](img/4.jpg)
+
+
+***文件上传的原理分析 ：***
+![](img/5.jpg)
+![](img/6.jpg)
+
+***借助第三方组件实现文件上传 ：***
+![](img/7.jpg)

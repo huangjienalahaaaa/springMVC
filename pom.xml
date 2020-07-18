@@ -50,8 +50,6 @@
       <version>2.0</version>
       <scope>provided</scope>
     </dependency>
-
-<!--    引入jackson的jar包-->
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>>jackson-databind</artifactId>
