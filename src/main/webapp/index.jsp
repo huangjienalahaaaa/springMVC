@@ -2,27 +2,12 @@
 <html>
 <head>
     <title>Title</title>
-    <script src="js/jquery.min.js"></script>
-
-    <script>
-       $(function () {
-            $("#btn").click(function () {
-                $.ajax({
-                    url:"user/testAjax",
-                    contentType:"application/json;charset=UTF-8", //发送信息到服务器时内容的编码类型
-                    data:'{"username":"hehe","password":"123","age":30}',
-                    dataType:"json",
-                    type:"post",
-                    success:function (data) {
-                        // data服务器端响应的json的数据，进行解析
-                        alert(data.username)
-                    }
-                })
-            })
-       })
-    </script>
-</head>
 <body>
-    <button id="btn"> 发送ajax的请求</button>
+    <h3>文件上传</h3>
+
+    <form action="/user/fileUpload1" method="post" enctype="multipart/form-data">
+        选择文件：<input type="file" name="upload"><br/>
+        <input type="submit" value="上传">
+    </form>
 </body>
 </html>

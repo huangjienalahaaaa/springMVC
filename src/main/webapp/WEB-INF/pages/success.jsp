@@ -6,10 +6,6 @@
     <title>Title</title>
 </head>
 <body>
-    <h3>执行成功了</h3>
-
-    ${user.username}
-    ${user.password}
-    ${user.age}
+    <h3>文件上传成功</h3>
 </body>
 </html>
