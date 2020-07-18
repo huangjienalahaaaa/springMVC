@@ -19,5 +19,16 @@
         <property name="suffix" value=".jsp"></property>
     </bean>
 
+<!--    前端控制器，哪些警太资源不拦截
+1. location:指的是webapp下的哪些文件不进行拦截
+mapping：跟你的映射请求时有关系的(
+        下面的mapping="/js/**" -> 表示：你请求的路径带有/js，我们都不会对它进行拦截。
+)
+2. 但是以后不仅仅是静态文件js，还有静态css.images文件，请看下面的配置
+-->
+   <mvc:resources mapping="/js/**" location="/js/**" />
+   <mvc:resources mapping="/images/**" location="/images/**" />
+   <mvc:resources mapping="/css/**" location="/css/**" />
+
     <mvc:annotation-driven></mvc:annotation-driven>
 </beans>
