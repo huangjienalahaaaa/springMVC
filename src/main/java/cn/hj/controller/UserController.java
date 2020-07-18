@@ -16,10 +16,6 @@ import java.io.IOException;
 @Controller
 @RequestMapping("/user")
 public class UserController {
-
-/* 模拟异步请求响应:
-  @RequestBody:获取请求体
- */
     @RequestMapping("/testAjax")
     public void testAjax(@RequestBody String body){
         System.out.println(body);
