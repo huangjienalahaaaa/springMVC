@@ -1,43 +1,30 @@
 package cn.hj.controller;
 
-import com.sun.jersey.api.client.Client;
-import com.sun.jersey.api.client.WebResource;
-import org.apache.commons.fileupload.FileItem;
-import org.apache.commons.fileupload.disk.DiskFileItemFactory;
-import org.apache.commons.fileupload.servlet.ServletFileUpload;
 
+import cn.hj.exception.SysException;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.multipart.MultipartFile;
-
-import javax.servlet.http.HttpServletRequest;
-import java.io.File;
-import java.util.List;
-import java.util.UUID;
 
 @Controller
 @RequestMapping("/user")
 public class UserController {
-//    SpringMVC文件上传
-    @RequestMapping("fileUpload2")
-    public String fileUpload2( MultipartFile upload){
 
-        //定义上传文件服务器路径
-        String path = "http://localhost:9090/uploads/"；
+    @RequestMapping("testException")
+    public String testException() throws Exception{
+        /**
+         * 1. 对某些语句写if,if...else,do/while,try...catch等话：选中这段话，然后ctrl+alt+t
+         */
 
+        //模拟异常
+        try {
+            int a = 10/0;
+        } catch (Exception e) {
+            //下一行代码表示，在控制台打印异常信息
+            e.printStackTrace();
 
-         String filename = upload.getOriginalFilename();
-         String uuid = UUID.randomUUID().toString().replace("-","");
-         filename = uuid+"_"+filename;
-
-        //创建客户端的对象
-        Client client = Client.create();
-
-        //和图片服务器进行连接
-        WebResource webResource = client.resource(path+filename);
-
-        //上传文件
-        webResource.put(upload.getBytes());
+            //向上抛出自定义异常信息
+            throw  new SysException("查询所有用户出现错误了...");
+        }
 
         return "success";
     }
