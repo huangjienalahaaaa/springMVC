@@ -1,7 +1,6 @@
 package cn.hj.controller;
 
 
-import cn.hj.exception.SysException;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 

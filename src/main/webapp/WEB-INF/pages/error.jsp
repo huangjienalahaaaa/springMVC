@@ -8,8 +8,5 @@
 
 <h4>error页面</h4>
 
-
-${errorMsg}
-
 </body>
 </html>
