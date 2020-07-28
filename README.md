@@ -1,4 +1,4 @@
-# v7.1 拦截器之编写controller
+# v7.2 拦截器入门代码
 
 ## controller笔记：
 
@@ -22,8 +22,6 @@
 1. 编写拦截器类实现HandlerInterceptor接口
 2. 配置拦截器
 ```
-
-
 
 
 
