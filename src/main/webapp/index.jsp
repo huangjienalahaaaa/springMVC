@@ -3,6 +3,6 @@
 <head>
     <title>Title</title>
 <body>
-    <a href="/user/testException">异常处理</a>
+    <a href="/user/testInterceptor">拦截器</a>
 </body>
 </html>

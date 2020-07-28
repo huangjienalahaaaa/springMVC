@@ -25,8 +25,5 @@
     <mvc:resources location="/js/" mapping="/js/**"/>
 
 
-<!--    配置异常处理器-->
-    <bean id="sysExceptionResolver" class="cn.hj.exception.SysExceptionResolver"></bean>
-
     <mvc:annotation-driven></mvc:annotation-driven>
 </beans>
