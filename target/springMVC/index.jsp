@@ -2,10 +2,12 @@
 <html>
 <head>
     <title>Title</title>
-</head>
 <body>
+    <h3>文件上传</h3>
 
-<a href="user/testString">testString</a>
-
+    <form action="/user/fileUpload1" method="post" enctype="multipart/form-data">
+        选择文件：<input type="file" name="upload"><br/>
+        <input type="submit" value="上传">
+    </form>
 </body>
 </html>
