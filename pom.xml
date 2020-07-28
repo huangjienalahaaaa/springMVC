@@ -65,7 +65,7 @@
       <artifactId>jackson-annotations</artifactId>
       <version>2.9.0</version>
     </dependency>
-<!--导入文件上传的jar包-->
+
     <dependency>
       <groupId>commons-fileupload</groupId>
       <artifactId>commons-fileupload</artifactId>
@@ -77,6 +77,16 @@
       <version>2.4</version>
     </dependency>
 
+    <dependency>
+      <groupId>com.sun.jerse</groupId>
+      <artifactId>jersey-cor</artifactId>
+      <version>1.18.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.sun.jerse</groupId>
+      <artifactId>jersey-clien</artifactId>
+      <version>1.18.1</version>
+    </dependency>
 
   </dependencies>
 
